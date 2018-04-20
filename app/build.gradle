@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 apply from: '../general-setting.gradle'
 
+android {
+    defaultConfig {
+        applicationId "com.example.harliedharma.android_sample_project"
+    }
+}
+
 dependencies {
     implementation project(':core')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
